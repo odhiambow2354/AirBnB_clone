@@ -16,6 +16,7 @@ During this first part, I was able to answer the following questions:
     How to handle named arguments in a function
 
 Files description
+
 AUTHORS: This file has a list of individuals that contributed content to the repository.
 
 console.py: It contains a command line interpreter limited to a specific use-case. In in my case, I was managing the objects of the project using this console.
@@ -25,6 +26,7 @@ models: This folder contains all the Class modules of the project, and a folder 
 tests: This folder contains all the UNITTEST of every module stored in the models folder and the TEST of the console.py file.
 
 Features
+
 Programming language: python3
 Style: All modules use the PEP 8 style
 Documentation: All modules have documentation, including the functions, classes,etc.
