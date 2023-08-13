@@ -23,9 +23,10 @@ This project aims to build a clone of the AirBnB website. The primary objectives
 - [General Use](#general-use)
 - [Contributors](#contributors)
 
-## Author
+## Authors
 
 - wycliffe Omondi <odhiambow2354@gmail.com>
+- Aicha BIRAT     <aichabirat2001@outlook.fr>
 
 ## Pep8
 
