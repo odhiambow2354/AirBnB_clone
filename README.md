@@ -1,63 +1,77 @@
-0x00. AirBnB clone - The console
+# HBNB - The Console
 
-Description
-This repositoy contains the first AirBnB clone project tasks The Console.
-During this first part, I was able to answer the following questions:
+**The ALX AirBnB Clone project**
 
-    How to create a Python package
-    How to create a command interpreter in Python using the cmd module
-    What is Unit testing and how to implement it in a large project
-    How to serialize and deserialize a Class
-    How to write and read a JSON file
-    How to manage datetime
-    What is an UUID
-    What is *args and how to use it
-    What is **kwargs and how to use it
-    How to handle named arguments in a function
+This project aims to build a clone of the AirBnB website. The primary objectives are:
 
-Files description
+1. Create a program that serializes and deserializes objects into JSON files, allowing data to persist between sessions.
+2. Develop a console to manage stored data, enabling the creation, deletion, and updating of instances of various classes.
 
-AUTHORS: This file has a list of individuals that contributed content to the repository.
+## Table of Contents
 
-console.py: It contains a command line interpreter limited to a specific use-case. In in my case, I was managing the objects of the project using this console.
+- [Authors](#authors)
+- [Pep8](#pep8)
+- [Unit Testing](#unit-testing)
+- [Make BaseModel](#make-basemodel)
+- [Update BaseModel w/ kwargs](#update-basemodel-w-kwargs)
+- [Create FileStorage class](#create-filestorage-class)
+- [Console 0.0.1](#console-001)
+- [Console 0.1](#console-01)
+- [Create User class](#create-user-class)
+- [More Classes](#more-classes)
+- [Console 1.0](#console-10)
+- [General Use](#general-use)
+- [Contributors](#contributors)
 
-models: This folder contains all the Class modules of the project, and a folder called engine.
+## Author
 
-tests: This folder contains all the UNITTEST of every module stored in the models folder and the TEST of the console.py file.
+- wycliffe Omondi <odhiambow2354@gmail.com>
 
-Features
+## Pep8
 
-Programming language: python3
-Style: All modules use the PEP 8 style
-Documentation: All modules have documentation, including the functions, classes,etc.
-Usage
-The console (console.py) works like this in interactive mode:
+All the code in the repository is PEP8 compliant.
 
-$ ./console.py
-(hbnb) help
+## Unit Testing
 
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit  create  destroy  show  all  update
+Unit testing files for the program are located in the `/tests` directory.
 
-(hbnb)
-(hbnb)
-(hbnb) quit
-$
-But also in non-interactive mode:
+## Make BaseModel
 
-$ echo "help" | ./console.py
-(hbnb)
+The `BaseModel` class is designed to be inherited by every model class in the project. It contains a few useful methods.
 
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit  create  destroy  show  all  update
-$
+## Update BaseModel w/ kwargs
 
-Author
-Name	                                GitHub username
-Wycliffe Omondi                        odhiambow2354
+Added functionality to recreate an instance of a class using a dictionary passed with kwargs.
 
-                      
+## Create FileStorage class
 
+The `FileStorage` class handles the JSON serialization and deserialization of a file. It reloads the content of the file for use within the program across multiple sessions.
+
+## Console 0.0.1
+
+The initial version of the console program is introduced. It provides basic functionality to quit, handle empty lines, and manage EOF in the input field.
+
+## Console 0.1
+
+The console is updated with methods for creating, destroying, showing, and updating individual objects stored within the file storage system.
+
+## Create User class
+
+The `User` class is introduced, and the console and file storage system are dynamically updated to work with the `User` class.
+
+## More Classes
+
+Additional classes, such as `Place`, `City`, `Amenity`, `State`, and `Review`, are introduced to store various information through the file storage system.
+
+## Console 1.0
+
+The console is updated to work dynamically with all the classes introduced in previous tasks. File storage is also updated to support these changes.
+
+## General Use
+
+1. Clone this repository.
+2. Locate the "console.py" file and run it as follows:
+
+   ```bash
+   /AirBnB_clone$ ./console.py
 
